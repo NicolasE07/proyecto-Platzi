@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>figures</title>
+		<link rel="stylesheet" href="assets/css/header_global.css" />
+		<link rel="stylesheet" href="assets/css/main_figures.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<ul class="ul">
+					<li class="ul__li--item">
+						<a href="figurasG.html">
+							<img class="nav__ul--img" src="assets/img/figures.png" alt="icono" />
+							<span class="li__span--display-none"> Figuras Geometricas </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="pagDescuentos.html">
+							<img class="nav__ul--img" src="assets/img/discount-coupon.svg" alt="icono" />
+							<span class="li__span--display-none"> Precios y descuentos </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="moda.html">
+							<img class="nav__ul--img" src="assets/img/mathematics.svg" alt="icono" />
+							<span class="li__span--display-none"> Promedios, Moda y mediana </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="analisSalarial.html">
+							<img class="nav__ul--img" src="assets/img/analysis.svg" alt="icono" />
+							<span class="li__span--display-none"> Analisis Salarial </span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+			<h2 class="main__h2">TRABAJO PRACTICO - PLATZI</h2>
+			<h1 class="main__h1">Figuras Geometricas</h1>
+			<section class="section">
+				<article class="article__triangulo article">
+					<h3>Triangulos</h3>
+					<img src="assets/img/triangulo.png" alt="triangulo" />
+					<p id="textErrorTriangulo"></p>
+					<form action="">
+						<div class="form-group">
+							<label for="inputTriangulo1"> Ingrese <strong>Lado A</strong> del triangulo </label>
+							<input id="inputTriangulo1" type="number" placeholder="cm" />
+						</div>
+
+						<div class="form-group">
+							<label for="inputTriangulo2"> Ingrese <strong>Lado B</strong> del triangulo </label>
+							<input id="inputTriangulo2" type="number" placeholder="cm" />
+						</div>
+
+						<div class="form-group">
+							<label for="inputTrianguloBase"> Ingrese <strong>Base </strong> del triangulo </label>
+							<input id="inputTrianguloBase" type="number" placeholder="cm" />
+							<p class="errorBase"></p>
+						</div>
+
+						<div class="form-group">
+							<label for="inputTrianguloAltura">
+								Ingrese <strong>Altura</strong> del triangulo
+							</label>
+							<input id="inputTrianguloAltura" type="number" placeholder="cm" />
+							<p class="errorAltura"></p>
+						</div>
+						<button class="btn-form" onclick="calcularPerimetroTriangulo()" type="button">
+							Calcular Perimetro
+						</button>
+						<button class="btn-form" onclick="calcularAreaTriangulo()" type="button">
+							Calcular Area
+						</button>
+					</form>
+				</article>
+				<article class="article__cuadrado article">
+					<h3>Cuadrado</h3>
+					<img src="assets/img/Cuadrado.png" alt="" />
+					<p id="textErrorCuadrado"></p>
+					<form action="">
+						<div class="form-group">
+							<label for="inputCuadrado">
+								Ingrese cualquier<strong> Lado </strong>del cuadrado
+							</label>
+							<input id="inputCuadrado" type="number" placeholder="cm" />
+						</div>
+						<button class="btn-form" onclick="calcularPerimetroCuadrado()" type="button">
+							Calcular Perimetro
+						</button>
+						<button class="btn-form" onclick="calcularAreaCuadrado()" type="button">
+							Calcular Area
+						</button>
+					</form>
+				</article>
+				<article class="article__circulo article">
+					<h3>Circulo</h3>
+					<img src="assets/img/Sphere.svg.png" alt="Circulo 3d" />
+					<p id="textErrorCirculo"></p>
+					<form action="">
+						<div class="form-group">
+							<label for="inputCirculo"> Ingrese <strong>Radio</strong> del Circulo </label>
+							<input id="inputCirculo" type="number" placeholder="cm" />
+						</div>
+						<button class="btn-form" onclick="calcularPerimetro()" type="button">
+							Calcular Perimetro
+						</button>
+						<button class="btn-form" onclick="calcularAreaCirculo()" type="button">
+							Calcular Area
+						</button>
+						<button class="btn-form" onclick="calcularDiametro()" type="button">
+							Calcular Diametro
+						</button>
+					</form>
+				</article>
+			</section>
+		</main>
+
+		<script src="assets/javascript/figurasG.js"></script>
+	</body>
+</html>

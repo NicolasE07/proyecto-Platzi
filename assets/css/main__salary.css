@@ -1,0 +1,106 @@
+body{
+    background-color: #353535;
+}
+
+body{
+    background-color: #353535;
+    min-width: 288px;
+}
+.main {
+	max-width: 1000px;
+	min-height: 450px;
+	margin: 10px auto;
+	padding: 20px;
+	min-width: 288px;
+}
+.main h2 {
+    text-align: center;
+    color: white;
+}
+
+.section__container{
+    display: flex;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.section__form {
+	width: 100%;
+    max-width: 390px;
+    min-width: 200px;
+}
+
+.message-red{
+    color: red;
+}
+#message{
+    color: wheat;
+}
+
+.section__form .form {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.title__section--lista{
+    font-size: 2.5rem;
+}
+
+.form label{
+    color: white;   
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+.form input{
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: blanchedalmond;
+    outline: none;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.btn__form{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+.lista__array li::marker{
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 5px;
+    color: green;
+}
+
+.lista__array{
+    margin:20px 0 0 10px;
+    color: white;
+}
+
+@media (max-width: 530px) {
+    .section__container{
+        flex-direction: column;
+    }
+    .section__form{
+        order: 2;
+    }
+    .section__lista{
+        order: 1;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    
+}

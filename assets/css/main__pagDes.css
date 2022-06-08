@@ -1,0 +1,93 @@
+body{
+    background-color: #353535;
+    color: white;
+}
+
+.main {
+    max-width: 1200px;
+    min-width: 288px;
+    margin: 25px auto;
+    min-height: 300px;
+
+
+}
+.container{
+    min-height: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section__form{
+    width: 100%;
+    max-width: 370px;
+    min-width: 220px;
+    padding: 15px;
+}
+
+#message{
+    color: red;
+}
+.title__section-form{
+    color: lightgreen;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+.section__cupones{
+    width: 100%;
+    max-width: 370px;
+    min-width: 220px;
+    padding: 25px;
+}
+.subtitle{
+    color: lightgreen;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.info-descuento{
+    color: lightgreen;
+    margin-left: 15px;
+}
+
+
+.container__form .form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.section__info-descuentos ul li{
+    list-style: none;
+}
+
+.section__cupones-list{
+    margin-top: 25px;
+}
+.section__cupones-list ul li{
+    list-style: none;
+}
+
+.form input{
+    height: 30px;
+    background-color: wheat;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 7px;
+    
+}
+
+.btn-form{
+    color: white;
+    background-color: green;
+    border: 1px solid #000;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 15px;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/header_global.css" />
+		<link rel="stylesheet" href="assets/css/main__salary.css" />
+		<title>Analisis Salarial</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<ul class="ul">
+					<li class="ul__li--item">
+						<a href="figurasG.html">
+							<img class="nav__ul--img" src="assets/img/figures.png" alt="icono" />
+							<span class="li__span--display-none"> Figuras Geometricas </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="pagDescuentos.html">
+							<img class="nav__ul--img" src="assets/img/discount-coupon.svg" alt="icono" />
+							<span class="li__span--display-none"> Precios y descuentos </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="moda.html">
+							<img class="nav__ul--img" src="assets/img/mathematics.svg" alt="icono" />
+							<span class="li__span--display-none"> Promedios, Moda y mediana </span>
+						</a>
+					</li>
+					<li class="ul__li--item">
+						<a href="analisSalarial.html">
+							<img class="nav__ul--img" src="assets/img/analysis.svg" alt="icono" />
+							<span class="li__span--display-none"> Analisis Salarial </span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+			<h2>Analisis Salarial</h2>
+			<section class="section__container">
+				<section class="section__form">
+					<div class="form__container">
+						<form action="" class="form">
+							<label for="inputArray">Crea la lista</label>
+							<p id="message"></p>
+							<input id="inputArray" type="number" placeholder="Ejemplo: 2" />
+							<button class="btn__form" onclick="crearArray()" disabled type="button">Agregar</button>
+							<button class="btn__form" onclick="resMediana()" type="button">Mediana</button>
+							<button class="btn__form" onclick="resMedianaColTop10()" type="button">Mediana Top 10%</button>
+							<input type="number" id="inputRemove" placeholder="3" />
+							<button class="btn__form" id="removeArrayList" type="button">Eliminar</button>
+							<button class="btn__form" onclick="eliminarTodo()" id="" type="button">Eliminar todo</button>
+						</form>
+					</div>
+				</section>
+				<section class="section__lista">
+					<h2 class="title__section--lista">Lista</h2>
+					<div class="lista__array">
+                        <ul id="list-values-default">
+
+                    </ul>
+                </div>
+				</section>
+			</section>
+		</main>
+
+		<script src="assets/javascript/salarys.js"></script>
+		<script src="assets/javascript/analis__salarys.js"></script>
+	</body>
+</html>
